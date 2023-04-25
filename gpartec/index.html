@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/validar.js"></script>
+    <link rel="stylesheet" href="Css/estilo_index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Login-Equipos</title>
+</head>
+<body  autocomplete="OFF">
+    <header>
+        <img src="Imgs/logo.png" class="imglogo">
+        <img src="Imgs/empleo.png" class="imgempleo">    
+    </header>
+  <br><br>
+<div class="col-sm-12">
+    <h2>Sistema de Control de Equipos</h2><br>
+    <br>
+</div> 
+ 
+    <div class="login">         
+                <div class="form-group" id="opciones" >
+                    <label for="">Seleccione el Rol con el cual desea Acceder:</label><br><br>
+                    <input type="radio" class="form-check-input"name="opc" value="1" onchange="mostrar(this.value);">&nbsp;Administrador
+                    <input type="radio" class="form-check-input"name="opc" value="2"  onchange="mostrar(this.value);">&nbsp;Cuentadante
+                    <input type="radio" class="form-check-input"name="opc" value="3"  onchange="mostrar(this.value);">Operador
+                    <input type="radio" class="form-check-input"name="opc" value="4"  onchange="mostrar(this.value);">Usuario
+                </div> 
+             
+                <div class="form-group2" id="Administrador" >
+                    <div class="mb-3 row">
+                        <div class="col-sm-4">
+                        <form action="Controlador/validar_admi.php" method="POST"   autocomplete="OFF">
+                        <h3>Administrador</h3>
+                        <label for="">Usuario:</label>
+                        <input type="text" class="form-control" name="usuario" style="margin-left:2%;" > <br><br>
+                    </div> 
+                </div> 
+                <div class="mb-3 row">
+                  <div class="col-sm-4">
+                        <label for="">Password:</label>
+                        <input type="password" class="form-control" name="password" style="margin-left:0.9%;"><br><br> 
+                        <input type="submit" name="btn_admi" value="Ingresar" class="btn1" >
+                        </div> 
+                    </div> 
+                </div>          
+                       
+                    </form>
+             
+             
+                <div class="form-group2" id="Cuentadante" >
+                    <div class="mb-3 row">
+                        <div class="col-sm-4">
+                               <form action="Controlador/validar_cue.php" method="POST"   autocomplete="OFF">
+                               <h3>Cuentadante</h3>
+                                 <label for="">Correo:</label>
+                                 <input type="text" class="form-control" name="usuario_cue" style="margin-left:2%;"><br><br>
+                        </div> 
+                    </div> 
+                    <div class="mb-3 row">      
+                        <div class="col-sm-4">
+                                 <label for="">Password:</label>
+                                 <input type="password" class="form-control" name="password_cue" style="margin-left:1%;"><br><br>
+                                  <input type="submit" name="btn_admi" value="Ingresar"  class="btn1">
+                                 </form>                   
+                         </div>
+                    </div> 
+                </div>  
+
+
+                <div class="form-group2" id="Operador">
+                    <div class="mb-3 row">
+                        <div class="col-sm-4">
+                               <form action="Controlador/validar_oper.php" method="POST" autocomplete="OFF">
+                               <h3>Operador</h3>
+                               <label for="">Correo:</label>
+                               <input type="text" class="form-control"  name="usuario_oper" style="margin-left:2%;" > <br><br>
+                        </div> 
+                    </div> 
+                    <div class="mb-3 row">
+                        <div class="col-sm-4">
+                               <label for="">Password:</label>
+                               <input type="password" class="form-control" name="password_oper" style="margin-left:0.9%;"><br><br>                  
+                               <input type="submit" name="btn_admi" value="Ingresar" class="btn1" >
+                               </form>
+                       </div>
+                   </div> 
+               </div> 
+
+                <div class="form-group2" id="Usuario" autocomplete="OFF">
+                    <form action="Pag_user/Mn_pc_user.php">
+                        <h3>Usuario</h3>
+                        <input type="submit" name="usuario_ing" value="Ingresar" class="btn1">
+                    </form>                   
+            </div>      
+    </div>
+</div>        
+</div>
+</body>
+</html>
