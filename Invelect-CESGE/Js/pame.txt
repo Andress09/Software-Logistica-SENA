@@ -1,0 +1,1 @@
+$resultado = mysqli_query($conn,"SELECT * FROM prestamos WHERE ELEM_= '$cod' OR ELEM_1='$cod' OR ELEM_2='$cod'  OR ELEM_3='$cod'  OR ELEM_4='$cod'  OR ELEM_5='$cod'  OR ELEM_6='$cod'  OR ELEM_7='$cod'  OR ELEM_8='$cod')  OR ELEM_9='$cod' ");

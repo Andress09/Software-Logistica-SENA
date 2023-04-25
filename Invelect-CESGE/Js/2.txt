@@ -1,0 +1,30 @@
+<?php
+   include("../Controlador/conexion.php");	
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo_edit.css">
+    <link rel="shortcut icon" href="../Imgs/logo.png" type="image/x-icon">
+</head>
+<title>Agregar préstamo</title>
+<header>
+        <img src="../Imgs/logo.png" class="imglogo" style="float: left; margin-left: 2%;padding:30px;">
+        <img src="../Imgs/empleo.png" class="imgempleo" style="float: rigth; margin-left: 70%;padding-top:170px;">
+    </header>
+<body  class="fondoInde" style=" background-image: url('../Imgs/fondo1.jpeg');  background-position: center center;
+    background-attachment: fixed;  background-size: cover;">
+    <div>
+    <h2>Agregar Préstamo </h2>
+        <form action="form_buscar_elemento.php" method="POST"style=" ;margin-left:40%;border: solid; border-color:green ;width: 370px;height: 300px;margin-top: 20px;border: 2px black solid;"  autocomplete="OFF">
+       
+		   <input type="text" name="cbx_idel" id="cbx_idel" style="opacity:40%;"><br><br>
+          <input type="submit" name="btnnew" id="buscar" Value="BUSCAR USUARIO" class="btn1"> <br><br>
+            <a href="form_buscar_elemento.php" class="btn1">registro</a>
+            <br><br>
+            <a href="form_prestamos.php" class="btn1">Retroceder</a>  
+        </form>
+    </div>
+	
